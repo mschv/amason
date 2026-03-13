@@ -80,6 +80,7 @@ function getNavbar() {
 }
 
 function getFooter() {
+  var assetBase = window.location.pathname.includes('/pages/') ? '../' : '';
   return `
   <div class="footer-top">Back to top</div>
   <div style="background:#232F3E">

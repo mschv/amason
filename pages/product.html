@@ -155,6 +155,10 @@
           <td>Returns</td>
           <td class="col-highlight">FREE 30-day</td>
         </tr>
+        <tr id="comp-row-critique">
+          <td>Critique</td>
+          <td class="col-highlight">Is access a crime?</td>
+        </tr>
         <tr id="comp-row-material">
           <td>Material</td>
           <td class="col-highlight"></td>
@@ -211,10 +215,7 @@
           <td>Brand Mythology</td>
           <td class="col-highlight"></td>
         </tr>
-        <tr id="comp-row-critique">
-          <td>Critique Note</td>
-          <td class="col-highlight"></td>
-        </tr>
+        
       </tbody>
     </table>
     </div>
@@ -477,6 +478,7 @@
   var compRowShipping     = document.getElementById('comp-row-shipping');
   var compRowSoldby       = document.getElementById('comp-row-soldby');
   var compRowReturns      = document.getElementById('comp-row-returns');
+  var compRowCritique     = document.getElementById('comp-row-critique');
   var compRowMaterial     = document.getElementById('comp-row-material');
   var compRowHardware     = document.getElementById('comp-row-hardware');
   var compRowCertificate  = document.getElementById('comp-row-certificate');
@@ -491,7 +493,6 @@
   var compRowAccessibility= document.getElementById('comp-row-accessibility');
   var compRowLabor        = document.getElementById('comp-row-labor');
   var compRowMythology    = document.getElementById('comp-row-mythology');
-  var compRowCritique     = document.getElementById('comp-row-critique');
 
   function makeTd(text, opts) {
     var el = document.createElement('td');
@@ -526,6 +527,7 @@
     compRowShipping.appendChild(makeTd(item.shipping || 'FREE'));
     compRowSoldby.appendChild(makeTd(item.soldBy || 'Amason.com'));
     compRowReturns.appendChild(makeTd(item.returns || 'FREE 30-day'));
+    compRowCritique.appendChild(makeTd(item.critique, { small: true, italic: true, left: true, color: '#555' }));
     compRowMaterial.appendChild(makeTd(item.material));
     compRowHardware.appendChild(makeTd(item.hardware));
     compRowCertificate.appendChild(makeTd(item.certificate));
@@ -540,7 +542,6 @@
     compRowAccessibility.appendChild(makeTd(item.accessibility, { small: true }));
     compRowLabor.appendChild(makeTd(item.laborEthics));
     compRowMythology.appendChild(makeTd(item.mythologyValue));
-    compRowCritique.appendChild(makeTd(item.critiqueNote, { small: true, italic: true, left: true, color: '#555' }));
   });
 
   // Hide rows where all non-label cells are empty

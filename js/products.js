@@ -108,7 +108,7 @@ const PRODUCTS = {
     category:     'Books',
     categoryUrl:  '#',
 
-    price:        '11.98',
+    price:        '0',
     priceWas:     '27.00',
 
     rating:       4.8,
@@ -178,9 +178,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop', name: 'Atomic Habits', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop', name: 'Atomic Habits', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop', name: 'Atomic Habits', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop', name: 'Atomic Habits', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'You are paying $12 for habits about paying less for things. The eBook is the minimum viable habit.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop', name: 'Atomic Habits', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day',critique:'The hardcover signals that you have committed to the system. The book costs $5 to produce.' },
     ],
 
     ratingDist: { 5: 74, 4: 14, 3: 6, 2: 3, 1: 3 },
@@ -288,9 +287,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://prodimage.images-bn.com/pimages/9781546148500_p0_v4_s600x595.jpg', name: 'Harry Potter & the Philosopher\'s Stone', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://prodimage.images-bn.com/pimages/9781546148500_p0_v4_s600x595.jpg', name: 'Harry Potter & the Philosopher\'s Stone', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://prodimage.images-bn.com/pimages/9781546148500_p0_v4_s600x595.jpg', name: 'Harry Potter & the Philosopher\'s Stone', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://prodimage.images-bn.com/pimages/9781546148500_p0_v4_s600x595.jpg', name: 'Harry Potter & the Philosopher\'s Stone', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'Pottermore sells DRM-free ebooks — unusual for major IP. The Wizarding World is the real product.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://prodimage.images-bn.com/pimages/9781546148500_p0_v4_s600x595.jpg', name: 'Harry Potter & the Philosopher\'s Stone', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day', critique:'The hardcover first edition (Bloomsbury, 1997) sells for $50,000+. The same story. Different paper.' },
     ],
 
     ratingDist: { 5: 89, 4: 8, 3: 2, 2: 1, 1: 0 },
@@ -398,8 +396,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/819SFV6rfRL._AC_UF1000,1000_QL80_.jpg', name: 'The Name of the Rose', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/819SFV6rfRL._AC_UF1000,1000_QL80_.jpg', name: 'The Name of the Rose', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/819SFV6rfRL._AC_UF1000,1000_QL80_.jpg', name: 'The Name of the Rose', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy',critique:'Eco novel about the suppression of texts is sold in a DRM-locked file. The library burns again.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/819SFV6rfRL._AC_UF1000,1000_QL80_.jpg', name: 'The Name of the Rose', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day',critique:'The hardcover edition is an artifact about artifacts. To own it is to participate in its subject.' },
     ],
 
     ratingDist: { 5: 68, 4: 20, 3: 8, 2: 2, 1: 2 },
@@ -507,9 +505,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg', name: 'The Shining', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg', name: 'The Shining', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg', name: 'The Shining', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg', name: 'The Shining', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'Stephen King sells his back catalogue cheap on Kindle. He believes access matters. The price is ethical.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg', name: 'The Shining', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day', critique:'The hardcover is a totem. You put it on the shelf to signal you have encountered the darkness and survived.' },
     ],
 
     ratingDist: { 5: 77, 4: 15, 3: 5, 2: 2, 1: 1 },
@@ -617,9 +614,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://m.media-amazon.com/images/I/91GoCrV6emL._AC_UF1000,1000_QL80_.jpg', name: 'One Hundred Years of Solitude', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/91GoCrV6emL._AC_UF1000,1000_QL80_.jpg', name: 'One Hundred Years of Solitude', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/91GoCrV6emL._AC_UF1000,1000_QL80_.jpg', name: 'One Hundred Years of Solitude', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/91GoCrV6emL._AC_UF1000,1000_QL80_.jpg', name: 'One Hundred Years of Solitude', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'The eBook flattens magical realism into a scrollable file. The form fights the content.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/91GoCrV6emL._AC_UF1000,1000_QL80_.jpg', name: 'One Hundred Years of Solitude', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day', critique:'The hardcover performs the weight of a hundred years. The cover design is the first act of interpretation.' },
     ],
 
     ratingDist: { 5: 79, 4: 13, 3: 5, 2: 2, 1: 1 },
@@ -727,9 +723,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://m.media-amazon.com/images/I/71wANojhEKL._AC_UF1000,1000_QL80_.jpg', name: '1984', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/71wANojhEKL._AC_UF1000,1000_QL80_.jpg', name: '1984', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/71wANojhEKL._AC_UF1000,1000_QL80_.jpg', name: '1984', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/71wANojhEKL._AC_UF1000,1000_QL80_.jpg', name: '1984', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'Orwell\'s estate charges ~$10 for a DRM-locked file of a book about information control. The irony is structural.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/71wANojhEKL._AC_UF1000,1000_QL80_.jpg', name: '1984', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day', critique:'The hardcover edition performs permanence. The book argues permanence is always manufactured.' },
     ],
 
     ratingDist: { 5: 80, 4: 12, 3: 5, 2: 2, 1: 1 },
@@ -837,9 +832,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://m.media-amazon.com/images/I/81T4dS6IkaL._AC_UF1000,1000_QL80_.jpg', name: 'The Great Gatsby', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/81T4dS6IkaL._AC_UF1000,1000_QL80_.jpg', name: 'The Great Gatsby', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/81T4dS6IkaL._AC_UF1000,1000_QL80_.jpg', name: 'The Great Gatsby', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/81T4dS6IkaL._AC_UF1000,1000_QL80_.jpg', name: 'The Great Gatsby', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'The eBook is $0–$2 since it is public domain. You are paying for the format, not the content.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/81T4dS6IkaL._AC_UF1000,1000_QL80_.jpg', name: 'The Great Gatsby', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day',critique:'The hardcover performs Fitzgeralds own obsession with surfaces. The book costs $6 to print. The parties cost millions.' },
     ],
 
     ratingDist: { 5: 62, 4: 20, 3: 10, 2: 5, 1: 3 },
@@ -947,9 +941,8 @@ const PRODUCTS = {
     carousels: ['books', 'tech'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://m.media-amazon.com/images/I/712D103oWGL._AC_UF1000,1000_QL80_.jpg', name: 'The Jungle', subtitle: 'PDF · Digital', subtitleColor: '#565959', stars: '★★★★½', count: '', price: '$0.00', shipping: 'Instant download', soldBy: 'Open web / Archive.org', returns: 'N/A' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/712D103oWGL._AC_UF1000,1000_QL80_.jpg', name: 'The Jungle', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/712D103oWGL._AC_UF1000,1000_QL80_.jpg', name: 'The Jungle', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://m.media-amazon.com/images/I/712D103oWGL._AC_UF1000,1000_QL80_.jpg', name: 'The Jungle', subtitle: 'eBook · Licensed', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$9.99–$14.99', shipping: 'Instant', soldBy: 'Kindle / Apple Books / Kobo', returns: 'Platform policy', critique:'You are paying $2 for a book about being paid nothing.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://m.media-amazon.com/images/I/712D103oWGL._AC_UF1000,1000_QL80_.jpg', name: 'The Jungle', subtitle: 'Hardcover · First Edition', subtitleColor: '#c7511f', stars: '★★★★★', count: '', price: '$28.99–$65.00', shipping: '$4–$8', soldBy: 'Bookshop / Publisher', returns: '30-day', critique:'The hardcover edition of a book about meatpacking. The binding is the luxury the workers never had.' },
     ],
 
     ratingDist: { 5: 55, 4: 24, 3: 12, 2: 5, 1: 4 },
@@ -1059,9 +1052,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,892', price: '$10,100.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$1,010–$3,030', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$200–$600', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$1,010–$3,030', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same movement, same case. The Swiss certificate is a paper distinction, not a material one.' },
+      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$200–$600', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None',critique:'The clone movement is the only real difference. The case is indistinguishable under magnification.' },
     ],
 
     ratingDist: { 5: 88, 4: 8, 3: 2, 2: 1, 1: 1 },
