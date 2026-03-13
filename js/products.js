@@ -120,9 +120,9 @@ const PRODUCTS = {
     sellerUrl:    '#',
 
     images: [
-      'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop',
-      'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500&h=500&fit=crop',
-      'https://images.unsplash.com/photo-1495640388908-05fa85288e61?w=500&h=500&fit=crop',
+      'https://m.media-amazon.com/images/I/81kg51XRc1L._AC_UF350,350_QL50_.jpg',
+      'https://m.media-amazon.com/images/I/81kg51XRc1L._AC_UF350,350_QL50_.jpg',
+      'https://m.media-amazon.com/images/I/81kg51XRc1L._AC_UF350,350_QL50_.jpg',
     ],
 
     highlights: [
@@ -1052,8 +1052,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$1,010–$3,030', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same movement, same case. The Swiss certificate is a paper distinction, not a material one.' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$200–$600', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None',critique:'The clone movement is the only real difference. The case is indistinguishable under magnification.' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,892', price: '$10,100.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day', critique:'A Rolex is 90% brand mythology, 10% engineering. The movement is excellent. So is a $500 Seiko.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://s3.us-east-1.amazonaws.com/ISHOWIMAGES/ROLEX+V7/wp/upright_watch_assets_portrait/m126610ln-0001.webp', name: 'Rolex Submariner', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$1,010–$3,030', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Same movement, same case. The Swiss certificate is a paper distinction, not a material one.' },
     ],
 
     ratingDist: { 5: 88, 4: 8, 3: 2, 2: 1, 1: 1 },
@@ -1161,9 +1161,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.vancleefarpels.com/content/dam/rcq/vca/DT/Qr/0T/lW/Sg/e8/B6/gl/WW/Q9/aw/DTQr0TlWSge8B6glWWQ9aw.png', name: 'Van Cleef Alhambra Necklace', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '2,341', price: '$6,350.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.vancleefarpels.com/content/dam/rcq/vca/DT/Qr/0T/lW/Sg/e8/B6/gl/WW/Q9/aw/DTQr0TlWSge8B6glWWQ9aw.png', name: 'Van Cleef Alhambra Necklace', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$635–$1,905', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://www.vancleefarpels.com/content/dam/rcq/vca/DT/Qr/0T/lW/Sg/e8/B6/gl/WW/Q9/aw/DTQr0TlWSge8B6glWWQ9aw.png', name: 'Van Cleef Alhambra Necklace', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$40–$180', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.vancleefarpels.com/content/dam/rcq/vca/DT/Qr/0T/lW/Sg/e8/B6/gl/WW/Q9/aw/DTQr0TlWSge8B6glWWQ9aw.png', name: 'Van Cleef Alhambra Necklace', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '2,341', price: '$6,350.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' , critique:'The clover is a botanical shape. The brand owns the specific arrangement. Nature is not compensated.'},
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.vancleefarpels.com/content/dam/rcq/vca/DT/Qr/0T/lW/Sg/e8/B6/gl/WW/Q9/aw/DTQr0TlWSge8B6glWWQ9aw.png', name: 'Van Cleef Alhambra Necklace', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$635–$1,905', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same gold weight, same stones. The atelier address is the only delta.' },
     ],
 
     ratingDist: { 5: 87, 4: 9, 3: 2, 2: 1, 1: 1 },
@@ -1272,9 +1271,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://fortrove.com/cdn/shop/files/57_3576cb38-add4-4892-83f9-f320f8ed5559.jpg?v=1756934043', name: 'Cartier Love Bracelet', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '4,782', price: '$7,550.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://fortrove.com/cdn/shop/files/57_3576cb38-add4-4892-83f9-f320f8ed5559.jpg?v=1756934043', name: 'Cartier Love Bracelet', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$755–$2,265', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://fortrove.com/cdn/shop/files/57_3576cb38-add4-4892-83f9-f320f8ed5559.jpg?v=1756934043', name: 'Cartier Love Bracelet', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$30–$200', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://fortrove.com/cdn/shop/files/57_3576cb38-add4-4892-83f9-f320f8ed5559.jpg?v=1756934043', name: 'Cartier Love Bracelet', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '4,782', price: '$7,550.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day', critique:'Cartier sells a screwdriver with every bracelet to perform commitment. The commitment is the product.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://fortrove.com/cdn/shop/files/57_3576cb38-add4-4892-83f9-f320f8ed5559.jpg?v=1756934043', name: 'Cartier Love Bracelet', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$755–$2,265', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same gold alloy. Same screws. The screwdriver is missing. The metaphor is not.' },
     ],
 
     ratingDist: { 5: 91, 4: 6, 3: 2, 2: 1, 1: 0 },
@@ -1381,9 +1379,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://media.tiffany.com/is/image/tco/60010733_BLT_MAIN1X1?hei=628&wid=628&fmt=webp', name: 'Tiffany T Wire Bracelet', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,451', price: '$1,875.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://media.tiffany.com/is/image/tco/60010733_BLT_MAIN1X1?hei=628&wid=628&fmt=webp', name: 'Tiffany T Wire Bracelet', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$188–$563', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://media.tiffany.com/is/image/tco/60010733_BLT_MAIN1X1?hei=628&wid=628&fmt=webp', name: 'Tiffany T Wire Bracelet', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$20–$60', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://media.tiffany.com/is/image/tco/60010733_BLT_MAIN1X1?hei=628&wid=628&fmt=webp', name: 'Tiffany T Wire Bracelet', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,451', price: '$1,875.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day', critique:'The blue box costs more to make than the bracelet. You are buying a box color.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://media.tiffany.com/is/image/tco/60010733_BLT_MAIN1X1?hei=628&wid=628&fmt=webp', name: 'Tiffany T Wire Bracelet', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$188–$563', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same bracelet, no blue box. The T is still a T without the box.' },
     ],
 
     ratingDist: { 5: 72, 4: 18, 3: 6, 2: 3, 1: 1 },
@@ -1491,9 +1488,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.londonjewelers.com/pub/media/catalog/product/1/0/1083596_6uwlqikc6uqpteg9.jpg', name: 'Bvlgari B.zero1 Ring', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,312', price: '$2,300.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.londonjewelers.com/pub/media/catalog/product/1/0/1083596_6uwlqikc6uqpteg9.jpg', name: 'Bvlgari B.zero1 Ring', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$230–$690', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://www.londonjewelers.com/pub/media/catalog/product/1/0/1083596_6uwlqikc6uqpteg9.jpg', name: 'Bvlgari B.zero1 Ring', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$30–$140', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.londonjewelers.com/pub/media/catalog/product/1/0/1083596_6uwlqikc6uqpteg9.jpg', name: 'Bvlgari B.zero1 Ring', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,312', price: '$2,300.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day', critique:'The word BVLGARI is engraved 48 times around the band. The brand IS the object.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.londonjewelers.com/pub/media/catalog/product/1/0/1083596_6uwlqikc6uqpteg9.jpg', name: 'Bvlgari B.zero1 Ring', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$230–$690', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same gold, same engraving. Without the receipt, the inscription has no origin story.' },
     ],
 
     ratingDist: { 5: 74, 4: 16, 3: 6, 2: 3, 1: 1 },
@@ -1600,9 +1596,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://i0.wp.com/mightychic.com/wp-content/uploads/2023/12/hermes-clic-h-bracelet-white-gold-hardware_1.jpg?fit=1200%2C1200&ssl=1', name: 'Hermès Clic H Bracelet', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '2,198', price: '$890.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://i0.wp.com/mightychic.com/wp-content/uploads/2023/12/hermes-clic-h-bracelet-white-gold-hardware_1.jpg?fit=1200%2C1200&ssl=1', name: 'Hermès Clic H Bracelet', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$89–$267', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://i0.wp.com/mightychic.com/wp-content/uploads/2023/12/hermes-clic-h-bracelet-white-gold-hardware_1.jpg?fit=1200%2C1200&ssl=1', name: 'Hermès Clic H Bracelet', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$20–$60', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://i0.wp.com/mightychic.com/wp-content/uploads/2023/12/hermes-clic-h-bracelet-white-gold-hardware_1.jpg?fit=1200%2C1200&ssl=1', name: 'Hermès Clic H Bracelet', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '2,198', price: '$890.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day', critique:'Orange enamel costs cents. The H on the clasp costs $800. The letter is the luxury.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://i0.wp.com/mightychic.com/wp-content/uploads/2023/12/hermes-clic-h-bracelet-white-gold-hardware_1.jpg?fit=1200%2C1200&ssl=1', name: 'Hermès Clic H Bracelet', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$89–$267', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same enamel, same clasp. The H does not know it is unauthorized.' },
     ],
 
     ratingDist: { 5: 81, 4: 13, 3: 4, 2: 1, 1: 1 },
@@ -1709,9 +1704,8 @@ const PRODUCTS = {
     carousels: ['jewelry', 'fashion'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'http://nallyjewels.com/cdn/shop/products/NN-825_1.jpg?v=1640113429&width=2048', name: 'Graff Diamond Necklace', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '2,567', price: '$48,000.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'http://nallyjewels.com/cdn/shop/products/NN-825_1.jpg?v=1640113429&width=2048', name: 'Graff Diamond Necklace', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$4,800–$14,400', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'http://nallyjewels.com/cdn/shop/products/NN-825_1.jpg?v=1640113429&width=2048', name: 'Graff Diamond Necklace', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$200–$800', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'http://nallyjewels.com/cdn/shop/products/NN-825_1.jpg?v=1640113429&width=2048', name: 'Graff Diamond Necklace', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '2,567', price: '$48,000.00', shipping: 'Complimentary', soldBy: 'Brand Boutique', returns: '14-day' ,critque:'The diamonds are GIA certified. The brand markup above diamond cost is 200–400%. The stones are the same stones.'},
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'http://nallyjewels.com/cdn/shop/products/NN-825_1.jpg?v=1640113429&width=2048', name: 'Graff Diamond Necklace', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$4,800–$14,400', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' , critique:'Same GIA stones, same setting. The Graff name adds $40,000. The diamonds add $8,000.'},
     ],
 
     ratingDist: { 5: 89, 4: 8, 3: 2, 2: 1, 1: 0 },
@@ -1872,8 +1866,8 @@ const PRODUCTS = {
     sellerUrl:    '#',
 
     images: [
-      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&h=500&fit=crop',
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop',
+      'https://www.redeluxe.com/cdn/shop/files/BB11BD0D-1273-4BAF-868E-3EB1B7BB6327.jpg?v=1723103347',
+      'https://www.redeluxe.com/cdn/shop/files/BB11BD0D-1273-4BAF-868E-3EB1B7BB6327.jpg?v=1723103347',
     ],
 
     highlights: [
