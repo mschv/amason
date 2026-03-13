@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amason.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amazon+Ember:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/shared.css">
+<link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<div class="breadcrumb">
+  <a href="../index.html">Amason.com</a>
+  <span class="sep">›</span>
+  <a href="#" id="bc-category">Category</a>
+  <span class="sep">›</span>
+  <span id="bc-product">Product</span>
+</div>
+
+<!-- PRODUCT GRID -->
+<div class="page">
+  <div class="thumb-strip" id="thumb-strip"></div>
+
+  <div class="main-image-wrap">
+    <img id="main-product-img" src="" alt="">
+  </div>
+
+  <div class="product-info">
+    <a href="#" class="brand-link" id="product-brand"></a>
+    <h1 id="product-title"></h1>
+    <div class="rating-row">
+      <span class="stars" id="product-stars"></span>
+      <a href="#reviews" class="rating-count" id="product-rating-count"></a>
+    </div>
+    <div class="sustain" id="product-sustain" style="display:none">🌿 1 sustainability feature ▾</div>
+    <hr class="divider">
+    <div class="price-main">
+      <span class="sym">$</span>
+      <span class="int" id="price-int"></span>
+      <span class="dec" id="price-dec"></span>
+    </div>
+    <div class="price-was" id="price-was"></div>
+    <div class="free-returns">↩ FREE Returns ▾</div>
+    <div class="size-color" id="size-row" style="display:none">Size: <span id="size-val"></span></div>
+    <div class="size-color" id="color-row" style="display:none">Color: <span id="color-val"></span></div>
+    <hr class="divider">
+    <div style="font-size:17px;font-weight:700;padding:6px 0 12px;">Product details</div>
+
+    <div class="collapse-section">
+      <div class="collapse-header" >Top highlights <span class="collapse-arrow">▲</span></div>
+      <div class="collapse-body open">
+        <table class="highlights-table" id="highlights-table"></table>
+      </div>
+    </div>
+
+    <div class="collapse-section">
+      <div class="collapse-header" >About this item <span class="collapse-arrow">▲</span></div>
+      <div class="collapse-body open">
+        <ul class="about-list" id="about-list"></ul>
+      </div>
+    </div>
+
+    <div class="collapse-section" id="style-section" style="display:none">
+      <div class="collapse-header" >Style <span class="collapse-arrow">▼</span></div>
+      <div class="collapse-body">
+        <ul class="about-list" id="style-list"></ul>
+      </div>
+    </div>
+
+    <div class="collapse-section">
+      <div class="collapse-header" >Item details <span class="collapse-arrow">▼</span></div>
+      <div class="collapse-body">
+        <table class="highlights-table" id="details-table"></table>
+      </div>
+    </div>
+
+    <button class="see-specs-btn">See all product specifications</button>
+    <div class="report-link">💬 Report an issue with this product or seller</div>
+  </div>
+
+  <div class="buy-box">
+    <div class="prime-box">
+      <div class="prime-logo">prime</div>
+      <p>Enjoy fast, free delivery, exclusive deals, and award-winning movies & TV shows.</p>
+      <a href="#">Join Prime</a>
+    </div>
+    <div class="bb-price">
+      <span class="sym">$</span>
+      <span class="int" id="bb-int"></span>
+      <span class="dec" id="bb-dec"></span>
+    </div>
+    <div class="bb-delivery" id="bb-delivery"></div>
+    <div class="bb-prime-note">Or <a href="#">Prime members</a> get FREE delivery <strong id="bb-prime-date"></strong>. <a href="#">Join Prime</a></div>
+    <div class="bb-loc"> <a href="#">Delivering to your location — Update location</a></div>
+    <div class="bb-stock" id="bb-stock"></div>
+    <button class="buy-btn btn-add" id="btn-add-cart">Add to cart</button>
+    <button class="buy-btn btn-now">Buy Now. You've earned it.</button>
+    <div class="secure-line"> Secure transaction.</div>
+    <hr class="bb-divider">
+    <div class="bb-meta-row"><span class="lbl">Ships from</span><span class="val">Amason.com</span></div>
+    <div class="bb-meta-row"><span class="lbl">Sold by</span><span class="val"><a href="#" id="bb-seller"></a></span></div>
+    <div class="bb-meta-row"><span class="lbl">Returns</span><span class="val"><a href="#">FREE 30-day refund/replacement</a></span></div>
+    <div class="bb-meta-row"><span class="lbl">Payment</span><span class="val"><a href="#">Secure transaction</a></span></div>
+    <button class="add-list-btn">Add to List</button>
+  </div>
+</div>
+
+<!-- ═══ BELOW FOLD ═══ -->
+<div class="below">
+
+  <!-- CAROUSEL SLOT 1 — rendered by JS from CAROUSEL_DATA -->
+  <hr class="section-divider">
+  <div id="carousel-slot-1"></div>
+
+  <!-- COMPARE WITH SIMILAR ITEMS -->
+  <hr class="section-divider">
+  <div class="az-comp">
+    <h2>Compare with similar items</h2>
+    <p class="sub" style="margin-bottom:16px;font-size:13px;color:#565959">All items listed ship from Amason fulfillment centers. Prices and availability subject to change.</p>
+    <div style="overflow-x:auto;">
+    <table class="az-comp-table" style="min-width:900px;" id="compare-table">
+      <thead>
+        <tr id="comp-thead">
+          <th style="width:160px;"></th>
+          <th class="col-highlight">
+            <div class="col-type-badge" style="background:#232f3e;color:#fff;">✦ This Item</div>
+            <img id="comp-this-img" src="" style="filter:saturate(0.6) brightness(0.9);" />
+            <div class="prod-name" id="comp-this-name"></div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="comp-row-reviews">
+          <td>Customer Reviews</td>
+          <td class="col-highlight"><span class="star-row" id="comp-this-stars"></span> <span id="comp-this-count"></span></td>
+        </tr>
+        <tr id="comp-row-price">
+          <td>Price</td>
+          <td class="col-highlight"><strong id="comp-this-price"></strong></td>
+        </tr>
+        <tr id="comp-row-shipping">
+          <td>Shipping</td>
+          <td class="col-highlight">FREE</td>
+        </tr>
+        <tr id="comp-row-soldby">
+          <td>Sold By</td>
+          <td class="col-highlight">Amason.com</td>
+        </tr>
+        <tr id="comp-row-returns">
+          <td>Returns</td>
+          <td class="col-highlight">FREE 30-day</td>
+        </tr>
+        <tr id="comp-row-material">
+          <td>Material</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-hardware">
+          <td>Hardware</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-certificate">
+          <td>Certificate</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-origin">
+          <td>Origin</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-production-cost">
+          <td>Production Cost Est.</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-legal">
+          <td>Legal Status</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-author">
+          <td>Author</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-format">
+          <td>Format</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-drm">
+          <td>DRM</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-pages">
+          <td>Pages</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-print-quality">
+          <td>Print Quality</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-accessibility">
+          <td>Accessibility</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-labor">
+          <td>Labor Ethics</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-mythology">
+          <td>Brand Mythology</td>
+          <td class="col-highlight"></td>
+        </tr>
+        <tr id="comp-row-critique">
+          <td>Critique Note</td>
+          <td class="col-highlight"></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- PRODUCT INFORMATION -->
+  <hr class="section-divider">
+  <div class="prod-info-section">
+    <div>
+      <h2>Product information</h2>
+      <table class="prod-info-table" id="prod-info-table">
+      </table>
+    </div>
+    <div>
+      <div class="warranty-section">
+        <h3>Warranty & Support</h3>
+        <p>Product Warranty: For warranty information about this product, please <a href="#">click here</a>.<br><br>Amason offers 30-day hassle-free returns on all purchases.</p>
+      </div>
+      <div class="feedback-section">
+        <h3>Feedback</h3>
+        <p>Would you like to <a href="#">tell us about a lower price?</a> ▾</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT DESCRIPTION -->
+  <hr class="section-divider">
+  <div class="prod-desc-section">
+    <h2>Product Description</h2>
+    <p id="prod-description"></p>
+
+    <div class="top-brand-section">
+      <h3 id="top-brand-heading">Top Brand</h3>
+      <div class="brand-badges">
+        <div class="brand-badge"><strong>Highly Rated</strong>Consistently rated 4 stars or above</div>
+        <div class="brand-badge"><strong>Trending</strong>Most searched in its category this month</div>
+        <div class="brand-badge"><strong>Low Returns</strong>Customers usually keep items from this brand</div>
+      </div>
+    </div>
+
+    <h3>What's in the box</h3>
+    <ul id="box-contents"></ul>
+  </div>
+
+  <!-- CAROUSEL SLOT 2 — rendered by JS from CAROUSEL_DATA -->
+  <hr class="section-divider">
+  <div id="carousel-slot-2"></div>
+
+  <!-- REVIEWS -->
+  <hr class="section-divider">
+  <div class="reviews-outer" id="reviews">
+    <div class="reviews-left">
+      <h2>Customer reviews</h2>
+      <div class="big-rating" id="rev-big-rating">—</div>
+      <div class="big-stars" id="rev-big-stars"></div>
+      <div class="global-ratings" id="rev-global-ratings"></div>
+      <div class="bar-row"><a href="#">5 star</a><div class="bar-bg"><div class="bar-fill" id="bar-5" style="width:0%"></div></div><span class="bar-pct" id="pct-5">—</span></div>
+      <div class="bar-row"><a href="#">4 star</a><div class="bar-bg"><div class="bar-fill" id="bar-4" style="width:0%"></div></div><span class="bar-pct" id="pct-4">—</span></div>
+      <div class="bar-row"><a href="#">3 star</a><div class="bar-bg"><div class="bar-fill" id="bar-3" style="width:0%"></div></div><span class="bar-pct" id="pct-3">—</span></div>
+      <div class="bar-row"><a href="#">2 star</a><div class="bar-bg"><div class="bar-fill" id="bar-2" style="width:0%"></div></div><span class="bar-pct" id="pct-2">—</span></div>
+      <div class="bar-row"><a href="#">1 star</a><div class="bar-bg"><div class="bar-fill" id="bar-1" style="width:0%"></div></div><span class="bar-pct" id="pct-1">—</span></div>
+      <div class="how-reviews">How customer reviews and ratings work ▾</div>
+      <div class="review-this">
+        <h3>Review this product</h3>
+        <p>Share your thoughts with other customers</p>
+        <button class="write-review-btn">Write a customer review</button>
+      </div>
+    </div>
+
+    <div class="reviews-right">
+      <div class="customers-say">
+        <h2>Customers say</h2>
+        <p id="customers-say-text">Customers appreciate this product's quality and value. Reviews highlight fast delivery and accurate description. Some customers mention the item exceeded their expectations.</p>
+        <div class="ai-note">🤖 Generated from the text of customer reviews</div>
+        <div style="font-size:13px;font-weight:700;margin-bottom:8px;">Select to learn more</div>
+        <div class="topic-tags">
+          <span class="topic-tag">Quality (988)</span>
+          <span class="topic-tag">Value (874)</span>
+          <span class="topic-tag">Delivery (541)</span>
+          <span class="topic-tag">Appearance (312)</span>
+          <span class="topic-tag">Packaging (203)</span>
+        </div>
+      </div>
+
+      <div class="review-images-section">
+        <h3>Reviews with images <a href="#">See all photos ›</a></h3>
+        <div class="review-photos" id="review-photos"></div>
+      </div>
+
+      <div class="top-reviews-title">Top reviews</div>
+      <div id="reviews-list"></div>
+
+      <a class="see-more-reviews" href="#">See more reviews ›</a>
+    </div>
+  </div>
+
+</div><!-- /.below -->
+
+<div id="footer-placeholder"></div>
+
+<script src="../js/products.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script>
+(function () {
+  var id = new URLSearchParams(window.location.search).get('id');
+  var p  = PRODUCTS[id];
+
+  if (!p) { window.location.href = '../index.html'; return; }
+
+  function stars(n) {
+    var f = Math.round(n);
+    return '★'.repeat(f) + '☆'.repeat(5 - f);
+  }
+
+  var parts = p.price.split('.');
+
+  // Page title
+  document.title = p.title + ' — Amason.com';
+
+  // Breadcrumb
+  var bcCat = document.getElementById('bc-category');
+  bcCat.textContent = p.category || 'Shop';
+  if (p.categoryUrl) bcCat.href = p.categoryUrl;
+  document.getElementById('bc-product').textContent =
+    p.title.length > 60 ? p.title.slice(0, 60) + '…' : p.title;
+
+  // Brand & title
+  var brandEl = document.getElementById('product-brand');
+  brandEl.textContent = 'Brand: ' + (p.brand || '');
+  if (p.brandUrl) brandEl.href = p.brandUrl;
+  document.getElementById('product-title').textContent = p.title;
+
+  // Rating
+  if (p.rating) {
+    document.getElementById('product-stars').textContent = stars(p.rating);
+    document.getElementById('product-rating-count').textContent =
+      p.rating + ' \u00a0(' + (p.ratingCount || '0') + ')';
+  }
+
+  // Sustainability
+  if (p.sustain !== false) {
+    document.getElementById('product-sustain').style.display = 'block';
+  }
+
+  // Price (info column)
+  document.getElementById('price-int').textContent = parts[0];
+  document.getElementById('price-dec').textContent = parts[1] || '00';
+  if (p.priceWas) {
+    var wasEl = document.getElementById('price-was');
+    wasEl.textContent = 'Was: $' + p.priceWas;
+    wasEl.style.display = 'block';
+  }
+
+  // Size / Color
+  if (p.size) {
+    document.getElementById('size-val').textContent = p.size;
+    document.getElementById('size-row').style.display = 'block';
+  }
+  if (p.color) {
+    document.getElementById('color-val').textContent = p.color;
+    document.getElementById('color-row').style.display = 'block';
+  }
+
+  // Top highlights table
+  var hlTable = document.getElementById('highlights-table');
+  var highlights = p.highlights || [];
+  if (highlights.length) {
+    highlights.forEach(function(row) {
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + row[0] + '</td><td>' + row[1] + '</td>';
+      hlTable.appendChild(tr);
+    });
+  } else {
+    hlTable.parentElement.parentElement.style.display = 'none';
+  }
+
+  // About bullets
+  var list = document.getElementById('about-list');
+  (p.about || []).forEach(function (text) {
+    var li = document.createElement('li');
+    li.textContent = text;
+    list.appendChild(li);
+  });
+
+  // Style section
+  if (p.style && p.style.length) {
+    var styleSection = document.getElementById('style-section');
+    styleSection.style.display = 'block';
+    var styleList = document.getElementById('style-list');
+    p.style.forEach(function(s) {
+      var li = document.createElement('li');
+      li.textContent = s;
+      styleList.appendChild(li);
+    });
+  }
+
+  // Item details table
+  var detailsTable = document.getElementById('details-table');
+  var details = p.details || [['Brand', p.brand || ''], ['ASIN', p.asin || id]];
+  details.forEach(function(row) {
+    var tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + row[0] + '</td><td>' + row[1] + '</td>';
+    detailsTable.appendChild(tr);
+  });
+
+  // Buy box price
+  document.getElementById('bb-int').textContent = parts[0];
+  document.getElementById('bb-dec').textContent = parts[1] || '00';
+
+  // Delivery & stock
+  var deliveryEl = document.getElementById('bb-delivery');
+  deliveryEl.innerHTML = '<strong>FREE delivery</strong> ' + (p.delivery || '');
+  var stockEl = document.getElementById('bb-stock');
+  stockEl.textContent = p.stock || 'In Stock';
+  if (p.stock && p.stock !== 'In Stock') stockEl.classList.add('low');
+
+  // Prime date (day after delivery)
+  document.getElementById('bb-prime-date').textContent = p.delivery || 'soon';
+
+  // Seller
+  var sellerEl = document.getElementById('bb-seller');
+  sellerEl.textContent = p.seller || 'Amason';
+  if (p.sellerUrl) sellerEl.href = p.sellerUrl;
+
+  // Images
+  var mainImg    = document.getElementById('main-product-img');
+  var thumbStrip = document.getElementById('thumb-strip');
+  (p.images || []).forEach(function (src, i) {
+    var thumb = document.createElement('img');
+    thumb.src = src;
+    thumb.alt = p.title + ' — view ' + (i + 1);
+    if (i === 0) {
+      thumb.classList.add('active');
+      mainImg.src = src;
+      mainImg.alt = p.title;
+    }
+    thumb.addEventListener('click', function () {
+      thumbStrip.querySelectorAll('img').forEach(function (t) { t.classList.remove('active'); });
+      thumb.classList.add('active');
+      mainImg.src = src;
+    });
+    thumbStrip.appendChild(thumb);
+  });
+
+  // Compare table — this item column
+  var compImg = document.getElementById('comp-this-img');
+  if (p.images && p.images[0]) compImg.src = p.images[0];
+  document.getElementById('comp-this-name').innerHTML =
+    p.title + '<br><span style="color:#c45500;font-weight:600;">' + (p.brand || '') + ' — Amason Version</span>';
+  document.getElementById('comp-this-stars').textContent = stars(p.rating || 0);
+  document.getElementById('comp-this-count').textContent = p.ratingCount || '';
+  document.getElementById('comp-this-price').textContent = '$' + p.price;
+
+  // Compare table — dynamic comparison columns
+  var compItems = p.compareItems || [];
+  var compThead = document.getElementById('comp-thead');
+  var compRowReviews      = document.getElementById('comp-row-reviews');
+  var compRowPrice        = document.getElementById('comp-row-price');
+  var compRowShipping     = document.getElementById('comp-row-shipping');
+  var compRowSoldby       = document.getElementById('comp-row-soldby');
+  var compRowReturns      = document.getElementById('comp-row-returns');
+  var compRowMaterial     = document.getElementById('comp-row-material');
+  var compRowHardware     = document.getElementById('comp-row-hardware');
+  var compRowCertificate  = document.getElementById('comp-row-certificate');
+  var compRowOrigin       = document.getElementById('comp-row-origin');
+  var compRowProdCost     = document.getElementById('comp-row-production-cost');
+  var compRowLegal        = document.getElementById('comp-row-legal');
+  var compRowAuthor       = document.getElementById('comp-row-author');
+  var compRowFormat       = document.getElementById('comp-row-format');
+  var compRowDrm          = document.getElementById('comp-row-drm');
+  var compRowPages        = document.getElementById('comp-row-pages');
+  var compRowPrintQuality = document.getElementById('comp-row-print-quality');
+  var compRowAccessibility= document.getElementById('comp-row-accessibility');
+  var compRowLabor        = document.getElementById('comp-row-labor');
+  var compRowMythology    = document.getElementById('comp-row-mythology');
+  var compRowCritique     = document.getElementById('comp-row-critique');
+
+  function makeTd(text, opts) {
+    var el = document.createElement('td');
+    el.textContent = text || '';
+    if (opts) {
+      if (opts.bold) el.innerHTML = '<strong>' + (text || '') + '</strong>';
+      if (opts.stars) el.innerHTML = '<span class="star-row">' + (opts.stars || '') + '</span> ' + (text || '');
+      if (opts.small) el.style.fontSize = '11px';
+      if (opts.italic) el.style.fontStyle = 'italic';
+      if (opts.left) el.style.textAlign = 'left';
+      if (opts.color) el.style.color = opts.color;
+    }
+    return el;
+  }
+
+  compItems.forEach(function(item) {
+    var th = document.createElement('th');
+    th.innerHTML =
+      '<div class="col-type-badge" style="background:' + item.badgeColor + ';color:#fff;">' + item.badge + '</div>' +
+      '<img src="' + item.img + '" />' +
+      '<div class="prod-name">' + item.name +
+        (item.subtitle ? '<br><span style="color:' + (item.subtitleColor || '#565959') + ';font-weight:600;">' + item.subtitle + '</span>' : '') +
+      '</div>' +
+      '<button class="add-cart-btn"' + (item.btnColor ? ' style="background:' + item.btnColor + ';color:#fff;"' : '') + '>Add to Cart</button>';
+    compThead.appendChild(th);
+
+    var tdR = document.createElement('td');
+    tdR.innerHTML = '<span class="star-row">' + (item.stars || '') + '</span> ' + (item.count || '');
+    compRowReviews.appendChild(tdR);
+
+    compRowPrice.appendChild(makeTd(item.price, { bold: true }));
+    compRowShipping.appendChild(makeTd(item.shipping || 'FREE'));
+    compRowSoldby.appendChild(makeTd(item.soldBy || 'Amason.com'));
+    compRowReturns.appendChild(makeTd(item.returns || 'FREE 30-day'));
+    compRowMaterial.appendChild(makeTd(item.material));
+    compRowHardware.appendChild(makeTd(item.hardware));
+    compRowCertificate.appendChild(makeTd(item.certificate));
+    compRowOrigin.appendChild(makeTd(item.origin));
+    compRowProdCost.appendChild(makeTd(item.productionCost));
+    compRowLegal.appendChild(makeTd(item.legalStatus));
+    compRowAuthor.appendChild(makeTd(item.author));
+    compRowFormat.appendChild(makeTd(item.format));
+    compRowDrm.appendChild(makeTd(item.drm));
+    compRowPages.appendChild(makeTd(item.pages));
+    compRowPrintQuality.appendChild(makeTd(item.printQuality));
+    compRowAccessibility.appendChild(makeTd(item.accessibility, { small: true }));
+    compRowLabor.appendChild(makeTd(item.laborEthics));
+    compRowMythology.appendChild(makeTd(item.mythologyValue));
+    compRowCritique.appendChild(makeTd(item.critiqueNote, { small: true, italic: true, left: true, color: '#555' }));
+  });
+
+  // Hide rows where all non-label cells are empty
+  document.querySelectorAll('#compare-table tbody tr').forEach(function(row) {
+    var cells = row.querySelectorAll('td');
+    var hasContent = false;
+    for (var i = 1; i < cells.length; i++) {
+      if (cells[i].textContent.trim()) { hasContent = true; break; }
+    }
+    if (!hasContent) row.style.display = 'none';
+  });
+
+  // Product information table
+  var infoTable = document.getElementById('prod-info-table');
+  var infoRows = p.productInfo || [
+    ['Brand', p.brand || ''],
+    ['Customer Reviews', (stars(p.rating || 0)) + ' ' + (p.ratingCount || '') + ' ratings'],
+    ['Date First Available', p.dateAvailable || '—'],
+    ['ASIN', p.asin || id],
+  ];
+  infoRows.forEach(function(row) {
+    var tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + row[0] + '</td><td>' + row[1] + '</td>';
+    infoTable.appendChild(tr);
+  });
+
+  // Product description
+  var descEl = document.getElementById('prod-description');
+  descEl.textContent = p.description || p.title + ' — available exclusively on Amason.com. Fast delivery, free returns, and Amason-backed quality assurance.';
+
+  // Top brand heading
+  document.getElementById('top-brand-heading').textContent = 'Top Brand: ' + (p.brand || '');
+
+  // Box contents
+  var boxEl = document.getElementById('box-contents');
+  (p.boxContents || [p.title]).forEach(function(item) {
+    var li = document.createElement('li');
+    li.textContent = item;
+    boxEl.appendChild(li);
+  });
+
+  // Reviews section
+  if (p.rating) {
+    document.getElementById('rev-big-rating').textContent = p.rating.toFixed(1) + ' out of 5';
+    document.getElementById('rev-big-stars').textContent = stars(p.rating);
+    document.getElementById('rev-global-ratings').textContent = (p.ratingCount || '0') + ' global ratings';
+
+    var dist = p.ratingDist || { 5: 70, 4: 15, 3: 8, 2: 4, 1: 3 };
+    [5,4,3,2,1].forEach(function(n) {
+      var pct = dist[n] || 0;
+      document.getElementById('bar-' + n).style.width = pct + '%';
+      document.getElementById('pct-' + n).textContent = pct + '%';
+    });
+  }
+
+  // Review photos (reuse product images)
+  var photoWrap = document.getElementById('review-photos');
+  (p.images || []).slice(0, 6).forEach(function(src) {
+    var img = document.createElement('img');
+    img.src = src.replace('w=500&h=500', 'w=90&h=90');
+    photoWrap.appendChild(img);
+  });
+
+  // Reviews list
+  var revList = document.getElementById('reviews-list');
+  (p.reviews || []).forEach(function(r) {
+    var card = document.createElement('div');
+    card.className = 'review-card';
+    card.innerHTML =
+      '<div class="reviewer-row"><div class="avatar">👤</div><span class="reviewer-name">' + r.name + '</span></div>' +
+      '<div class="rev-title-row"><span class="rev-stars">' + stars(r.rating) + '</span><span class="rev-title">' + r.title + '</span></div>' +
+      '<div class="rev-meta">Reviewed on ' + r.date + '</div>' +
+      '<div class="rev-color"><span class="verified">Verified Purchase</span></div>' +
+      '<div class="rev-body">' + r.body + '</div>' +
+      '<div class="helpful-count">' + (r.helpful || 0) + ' people found this helpful</div>' +
+      '<div class="helpful-row"><button class="helpful-btn">Helpful</button><button class="report-btn">Report</button></div>';
+    revList.appendChild(card);
+  });
+
+  // Carousels
+  function renderCarousel(slotId, key) {
+    var data = CAROUSEL_DATA[key];
+    if (!data) return;
+    var isBook = data.type === 'book';
+    var isFashion = data.type === 'fashion';
+    var itemClass = 'scroll-item item-product' + (isFashion ? ' fashion' : '');
+
+    var itemsHtml = data.items.map(function(it) {
+      var tag = isBook ? ('<span class="book-tag">' + (it.tag || 'PDF') + '</span>') : '';
+      var imgWrap = isBook
+        ? ('<div class="book-img-wrap"><img src="' + it.img + '" alt="' + it.brand + '">' + tag + '</div>')
+        : ('<img src="' + it.img + '" alt="' + it.brand + '">');
+      var inner =
+        imgWrap +
+        '<div class="item-brand">' + it.brand + '</div>' +
+        '<div class="item-desc">' + it.desc + '</div>' +
+        '<div class="item-stars">' + it.stars + '</div>' +
+        '<div class="item-price">' + it.price + '</div>' +
+        (it.was  ? '<div class="item-was">'  + it.was  + '</div>' : '') +
+        (it.deal ? '<div class="item-deal">' + it.deal + '</div>' : '');
+      if (it.href) {
+        return '<a href="' + it.href + '" class="' + itemClass + '">' + inner + '</a>';
+      }
+      return '<div class="' + itemClass + '">' + inner + '</div>';
+    }).join('');
+
+    document.getElementById(slotId).innerHTML =
+      '<div class="section-panel">' +
+        '<div class="section-hd"><h2>' + data.title + '</h2><a href="#">See all</a></div>' +
+        '<div class="carousel-wrap">' +
+          '<button class="carousel-btn prev">‹</button>' +
+          '<div class="carousel">' + itemsHtml + '</div>' +
+          '<button class="carousel-btn next">›</button>' +
+        '</div>' +
+      '</div>';
+  }
+
+  var carouselKeys = p.carousels || [];
+  renderCarousel('carousel-slot-1', carouselKeys[0]);
+  renderCarousel('carousel-slot-2', carouselKeys[1]);
+
+})();
+</script>
+</body>
+</html>

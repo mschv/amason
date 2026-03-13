@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Home Page",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Product — Atomic Habits",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/pages/product.html?id=atomic-habits",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Product — Rolex Submariner",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/pages/product.html?id=rolex-submariner",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Product — Chanel Classic Flap",
+      "type": "chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/pages/product.html?id=chanel-classic-flap",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
