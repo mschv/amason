@@ -2033,9 +2033,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.net-a-porter.com/variants/images/1647597303464545/in/w2000_q60.jpg', name: 'Loro Piana Cashmere Poncho', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,207', price: '$4,200.00', shipping: 'Complimentary', soldBy: 'Loro Piana Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.net-a-porter.com/variants/images/1647597303464545/in/w2000_q60.jpg', name: 'Loro Piana Cashmere Poncho', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$420–$1,260', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://www.net-a-porter.com/variants/images/1647597303464545/in/w2000_q60.jpg', name: 'Loro Piana Cashmere Poncho', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$60–$200', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.net-a-porter.com/variants/images/1647597303464545/in/w2000_q60.jpg', name: 'Loro Piana Cashmere Poncho', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '3,207', price: '$4,200.00', shipping: 'Complimentary', soldBy: 'Loro Piana Boutique', returns: '14-day' , critique:'Baby cashmere sourced from Inner Mongolia; pricing reflects fiber scarcity + brand premium.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.net-a-porter.com/variants/images/1647597303464545/in/w2000_q60.jpg', name: 'Loro Piana Cashmere Poncho', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$420–$1,260', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same fiber, same loom, same hands. Label is the only delta.' },
     ],
 
     ratingDist: { 5: 72, 4: 18, 3: 6, 2: 3, 1: 1 },
@@ -2145,9 +2144,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.jpg', name: 'Louis Vuitton Neverfull MM', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '9,312', price: '$1,690.00', shipping: 'Complimentary', soldBy: 'Louis Vuitton Boutique', returns: '30-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.jpg', name: 'Louis Vuitton Neverfull MM', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$170–$507', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.jpg', name: 'Louis Vuitton Neverfull MM', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$30–$150', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.jpg', name: 'Louis Vuitton Neverfull MM', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '9,312', price: '$1,690.00', shipping: 'Complimentary', soldBy: 'Louis Vuitton Boutique', returns: '30-day', critique:'Coated canvas costs cents to produce. You are buying the monogram passport.'},
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.jpg', name: 'Louis Vuitton Neverfull MM', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$170–$507', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies',critique:'The canvas is the brand. The brand is a legal construct. The bag is just a bag.' },
     ],
 
     ratingDist: { 5: 83, 4: 11, 3: 4, 2: 1, 1: 1 },
@@ -2257,9 +2255,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.fashionphile.com/cdn/shop/files/aeaf610f7b6f61611b711f2356eeb09d.jpg?v=1770831259&width=1946', name: 'Balenciaga Triple S', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★½', count: '3,892', price: '$1,150.00', shipping: 'Complimentary', soldBy: 'Balenciaga Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.fashionphile.com/cdn/shop/files/aeaf610f7b6f61611b711f2356eeb09d.jpg?v=1770831259&width=1946', name: 'Balenciaga Triple S', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★½', count: '', price: '$115–$345', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://www.fashionphile.com/cdn/shop/files/aeaf610f7b6f61611b711f2356eeb09d.jpg?v=1770831259&width=1946', name: 'Balenciaga Triple S', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$30–$100', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.fashionphile.com/cdn/shop/files/aeaf610f7b6f61611b711f2356eeb09d.jpg?v=1770831259&width=1946', name: 'Balenciaga Triple S', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★½', count: '3,892', price: '$1,150.00', shipping: 'Complimentary', soldBy: 'Balenciaga Boutique', returns: '14-day',critique:'Intentional ugliness as luxury signal. The outsole costs $4 to make.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.fashionphile.com/cdn/shop/files/aeaf610f7b6f61611b711f2356eeb09d.jpg?v=1770831259&width=1946', name: 'Balenciaga Triple S', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★½', count: '', price: '$115–$345', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'The hype is the product. Without the label, it is just a heavy shoe.' },
     ],
 
     ratingDist: { 5: 67, 4: 18, 3: 8, 2: 4, 1: 3 },
@@ -2368,9 +2365,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw05ac74d9/original/90_1008745-1A01253_1B000_16_Medusa~Midi~Dress--Versace-online-store_2_0.jpg?sw=850&q=85&strip=true', name: 'Versace Medusa Dress', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '5,671', price: '$2,800.00', shipping: 'Complimentary', soldBy: 'Versace Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw05ac74d9/original/90_1008745-1A01253_1B000_16_Medusa~Midi~Dress--Versace-online-store_2_0.jpg?sw=850&q=85&strip=true', name: 'Versace Medusa Dress', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$280–$840', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw05ac74d9/original/90_1008745-1A01253_1B000_16_Medusa~Midi~Dress--Versace-online-store_2_0.jpg?sw=850&q=85&strip=true', name: 'Versace Medusa Dress', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$30–$120', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw05ac74d9/original/90_1008745-1A01253_1B000_16_Medusa~Midi~Dress--Versace-online-store_2_0.jpg?sw=850&q=85&strip=true', name: 'Versace Medusa Dress', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '5,671', price: '$2,800.00', shipping: 'Complimentary', soldBy: 'Versace Boutique', returns: '14-day', critique:'Medusa head is a legal trademark applied to $15 of silk. You pay for the myth.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw05ac74d9/original/90_1008745-1A01253_1B000_16_Medusa~Midi~Dress--Versace-online-store_2_0.jpg?sw=850&q=85&strip=true', name: 'Versace Medusa Dress', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$280–$840', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Same dress. Same worker. Minus the mythology tax.' },
     ],
 
     ratingDist: { 5: 82, 4: 11, 3: 4, 2: 2, 1: 1 },
@@ -2480,9 +2476,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://cdn.saksfifthavenue.com/is/image/saks/0400021739857_BLACKGOLD?wid=600&hei=800&qlt=90&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0', name: 'Prada Re-Edition 2005', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '6,218', price: '$1,350.00', shipping: 'Complimentary', soldBy: 'Prada Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://cdn.saksfifthavenue.com/is/image/saks/0400021739857_BLACKGOLD?wid=600&hei=800&qlt=90&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0', name: 'Prada Re-Edition 2005', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$135–$405', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://cdn.saksfifthavenue.com/is/image/saks/0400021739857_BLACKGOLD?wid=600&hei=800&qlt=90&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0', name: 'Prada Re-Edition 2005', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$15–$60', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://cdn.saksfifthavenue.com/is/image/saks/0400021739857_BLACKGOLD?wid=600&hei=800&qlt=90&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0', name: 'Prada Re-Edition 2005', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '6,218', price: '$1,350.00', shipping: 'Complimentary', soldBy: 'Prada Boutique', returns: '14-day', critique:'Recycled nylon is the sustainability narrative. The triangle is the price justifier.' },
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://cdn.saksfifthavenue.com/is/image/saks/0400021739857_BLACKGOLD?wid=600&hei=800&qlt=90&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0', name: 'Prada Re-Edition 2005', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$135–$405', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' , critique:'Recycled nylon is still recycled without the triangle. The ecology does not care.'},
     ],
 
     ratingDist: { 5: 75, 4: 16, 3: 6, 2: 2, 1: 1 },
@@ -2593,9 +2588,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://cdn-images.farfetch-contents.com/22/25/01/90/22250190_53158187_600.jpg', name: 'Gucci GG Marmont Bag', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '5,102', price: '$1,980.00', shipping: 'Complimentary', soldBy: 'Gucci Boutique', returns: '14-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://cdn-images.farfetch-contents.com/22/25/01/90/22250190_53158187_600.jpg', name: 'Gucci GG Marmont Bag', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$198–$594', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://cdn-images.farfetch-contents.com/22/25/01/90/22250190_53158187_600.jpg', name: 'Gucci GG Marmont Bag', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$25–$100', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://cdn-images.farfetch-contents.com/22/25/01/90/22250190_53158187_600.jpg', name: 'Gucci GG Marmont Bag', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '5,102', price: '$1,980.00', shipping: 'Complimentary', soldBy: 'Gucci Boutique', returns: '14-day' ,critique:'The GG logo was designed in the 1960s. You are paying for 60 years of marketing.'},
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://cdn-images.farfetch-contents.com/22/25/01/90/22250190_53158187_600.jpg', name: 'Gucci GG Marmont Bag', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$198–$594', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies', critique:'Without the card, the 60 years of marketing cannot attach to the object.' },
     ],
 
     ratingDist: { 5: 81, 4: 13, 3: 4, 2: 1, 1: 1 },
@@ -2703,9 +2697,8 @@ const PRODUCTS = {
     carousels: ['fashion', 'jewelry'],
 
     compareItems: [
-      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://assets.burberry.com/is/image/Burberryltd/E406187C-7DA5-45A5-92F1-4C8260E9C2C2?$BBY_V3_SL_1$&wid=1501&hei=1500', name: 'Burberry Cashmere Scarf', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '4,112', price: '$590.00', shipping: 'Complimentary', soldBy: 'Burberry Boutique', returns: '30-day' },
-      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://assets.burberry.com/is/image/Burberryltd/E406187C-7DA5-45A5-92F1-4C8260E9C2C2?$BBY_V3_SL_1$&wid=1501&hei=1500', name: 'Burberry Cashmere Scarf', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$59–$177', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' },
-      { badge: 'Premium', badgeColor: '#c7511f', btnColor: '#c7511f', img: 'https://assets.burberry.com/is/image/Burberryltd/E406187C-7DA5-45A5-92F1-4C8260E9C2C2?$BBY_V3_SL_1$&wid=1501&hei=1500', name: 'Burberry Cashmere Scarf', subtitle: 'High-Quality Fake · AAA', subtitleColor: '#c7511f', stars: '★★★★☆', count: '', price: '$15–$50', shipping: 'Varies', soldBy: 'Third-party Seller', returns: 'None' },
+      { badge: 'Top Rated', badgeColor: '#007185', img: 'https://assets.burberry.com/is/image/Burberryltd/E406187C-7DA5-45A5-92F1-4C8260E9C2C2?$BBY_V3_SL_1$&wid=1501&hei=1500', name: 'Burberry Cashmere Scarf', subtitle: 'Authentic · New', subtitleColor: '#565959', stars: '★★★★★', count: '4,112', price: '$590.00', shipping: 'Complimentary', soldBy: 'Burberry Boutique', returns: '30-day', critique: 'The check pattern is a trademarked graphic on cashmere. The trademark IS the product.'},
+      { badge: 'Best Value', badgeColor: '#5a3e8a', btnColor: '#5a3e8a', img: 'https://assets.burberry.com/is/image/Burberryltd/E406187C-7DA5-45A5-92F1-4C8260E9C2C2?$BBY_V3_SL_1$&wid=1501&hei=1500', name: 'Burberry Cashmere Scarf', subtitle: 'Overrun · Surplus', subtitleColor: '#5a3e8a', stars: '★★★★★', count: '', price: '$59–$177', shipping: 'Varies', soldBy: 'Grey Market Reseller', returns: 'Varies' , critique:'A check is a check. The cashmere does not know who owns the pattern.'},
     ],
 
     ratingDist: { 5: 76, 4: 16, 3: 5, 2: 2, 1: 1 },
